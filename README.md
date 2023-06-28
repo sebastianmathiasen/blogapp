@@ -1,8 +1,7 @@
 
 # Blog App
 
-Blog App es una aplicación de escritorio construida con Python que permite a los usuarios administrar entradas de blog. Es una herramienta ideal para aprender y demostrar conceptos básicos de la programación orientada a objetos, las bases de datos y la creación de interfaces de usuario en Python.
-
+Blog App is a desktop application built with Python that allows users to manage blog entries. It's an ideal tool for learning and showcasing fundamental concepts of object-oriented programming, databases, and the creation of user interfaces in Python.
 
 ## Project Description 
 
