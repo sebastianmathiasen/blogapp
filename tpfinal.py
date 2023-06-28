@@ -15,7 +15,7 @@ cursor = con.cursor()
 # funcion para crear la tabla
 def crear_tabla():
     # Creo las instrucciones para la tabla
-    sql_table = "CREATE TABLE IF NOT EXISTS blogs (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, content TEXT NOT NULL, email TEXT NOT NULL, creatd_date TEXT NOT NULL)"
+    sql_table = "CREATE TABLE IF NOT EXISTS blogs (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, content TEXT NOT NULL, email TEXT NOT NULL, created_date TEXT NOT NULL)"
     # Ejecuto la tabla
     cursor.execute(sql_table)
     # confirmo ejecucion
@@ -174,7 +174,7 @@ def control_alta():
     content = b_val.get()
     email = c_val.get()
     # Uso regex para verificacion
-    if re.match(r"[^@]+@[^@]+\.[^@]+", email):
+    if re.match(r"(<)?(\w+@\w+(?:\.[a-z]+)+)(?(1)>|$)", email):
         alta(title, content, email, str(date.today()), tree, message_label)
         a_val.set("")
         b_val.set("")
